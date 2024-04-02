@@ -11,7 +11,7 @@ public:
         for (int i = 1; i < nums.size(); i++) {
             if (nums[i] == nums[i - 1] + 1) {
                 currlen++;
-            } else if (nums[i] !1= nums[i - 1]) {
+            } else if (nums[i] != nums[i - 1]) {
                 maxlen = max(maxlen, currlen); 
                 currlen = 1;
         }

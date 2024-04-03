@@ -1,4 +1,4 @@
-\\Two sum using brute force
+//Two sum using brute force
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -13,7 +13,7 @@ public:
     }
 };
 
-\\Two sum using hashing
+//Two sum using hashing
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -22,7 +22,7 @@ public:
        for(int i=0;i<n;i++){
         int comp=target-nums[i];
         if(numMap.count(comp)){
-            return{numMap[comp],i};
+            return{numMap[comp],i};   //it gives index of comp using hashtable orelse it stores in hastable if not present current comp
         }
         numMap[nums[i]]=i;
        }
